@@ -72,7 +72,8 @@
         // number to stop backspacing on.
         // default 0, can change depending on how many chars
         // you want to remove at the time
-        this.stopNum = 0;
+        //this.stopNum = 0;
+        this.stopNum = this.options.stopNumb;
 
         // Looping logic
         this.loop = this.options.loop;
@@ -405,6 +406,8 @@
         cursorChar: "|",
         // attribute to type (null == text)
         attr: null,
+        // stopNumb option
+        stopNumb: 0,
         // either html or text
         contentType: 'html',
         // call when done callback function
